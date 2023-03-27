@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es2019",
+      "dom"
+    ],
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "outDir": "./tsDist/",
+    "experimentalDecorators": true,
+    "baseUrl": "app",
+    "suppressImplicitAnyIndexErrors": true,
+    "importHelpers": true,
+    "paths": {
+      "@services/*": [
+        "services/*"
+      ],
+      "@rest/*": [
+        "services/rest/*"
+      ],
+      "@styles/*": [
+        "assets/styles/*"
+      ],
+      "@assetsImg/*": [
+        "assets/img/*"
+      ]
+    }
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": false
+}
